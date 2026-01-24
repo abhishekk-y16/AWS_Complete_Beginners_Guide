@@ -1,0 +1,26 @@
+name: Auto Label Issues
+on:
+  issues:
+    types: [opened, edited]
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Label PR by size
+        if: github.event_name == 'pull_request'
+        uses: codelytv/pr-size-labeler@v1.10.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          xs_max_size: 10
+          s_max_size: 100
+          m_max_size: 500
+          l_max_size: 1000
+      - name: Labeler
+        uses: actions/labeler@v4
+        with:
+          configuration-path: .github/labeler.yml
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

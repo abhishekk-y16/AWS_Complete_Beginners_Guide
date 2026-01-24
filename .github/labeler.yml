@@ -1,0 +1,51 @@
+# Automatically label PRs based on files changed
+- label: "documentation"
+  files:
+    - "*.md"
+
+- label: "configuration"
+  files:
+    - ".github/**"
+    - ".gitignore"
+    - ".editorconfig"
+    - ".prettierrc"
+
+- label: "compute"
+  files:
+    - "compute/**"
+
+- label: "storage"
+  files:
+    - "storage/**"
+
+- label: "database"
+  files:
+    - "database/**"
+
+- label: "networking"
+  files:
+    - "networking/**"
+
+- label: "security"
+  files:
+    - "security/**"
+
+- label: "containers"
+  files:
+    - "containers/**"
+
+- label: "analytics"
+  files:
+    - "analytics/**"
+
+- label: "machine-learning"
+  files:
+    - "machine-learning/**"
+
+- label: "tutorials"
+  files:
+    - "tutorials/**"
+
+- label: "best-practices"
+  files:
+    - "best-practices/**"

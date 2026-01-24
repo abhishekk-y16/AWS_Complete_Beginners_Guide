@@ -1,0 +1,3 @@
+# CONFIG
+
+Documentation for config.

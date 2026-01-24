@@ -1,0 +1,29 @@
+name: Link Checker
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check links
+        uses: lycheeverse/lychee-action@v1.8.0
+        with:
+          args: --no-progress --max-retries 3 *.md compute/**/*.md storage/**/*.md database/**/*.md networking/**/*.md security/**/*.md containers/**/*.md analytics/**/*.md machine-learning/**/*.md developer-tools/**/*.md management-governance/**/*.md migration-transfer/**/*.md media-services/**/*.md other-categories/**/*.md tutorials/**/*.md use-cases/**/*.md service-comparisons/**/*.md best-practices/**/*.md troubleshooting/**/*.md glossary/**/*.md resources/**/*.md
+      - name: Create Issue if links fail
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'Broken links detected',
+              body: 'Check workflow logs for details'
+            })

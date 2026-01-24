@@ -1,0 +1,26 @@
+name: Update Table of Contents
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'README.md'
+      - '**/*.md'
+
+jobs:
+  update-toc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update TOC
+        uses: nk2028/github-action-markdown-toc@v1.1
+        with:
+          files: README.md,CONTRIBUTING.md
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "docs: update table of contents" || echo "No changes to commit"
+          git push || echo "No changes to push"
