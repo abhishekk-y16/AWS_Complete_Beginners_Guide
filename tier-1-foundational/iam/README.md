@@ -1,50 +1,78 @@
-# AWS IAM (Identity and Access Management) 🔐
+# IAM - Identity & Access Management
 
-## 🎯 What is IAM?
+Master identity and access control in AWS - the foundation of AWS security.
 
-IAM is the security system for AWS. It controls **who** can access **what** in your AWS account and **what** they're allowed to do. Think of it like a hotel key card system where the root account is the master key and IAM users are guest cards.
+## 📚 Learning Path
 
-## ⚠️ Most Important Rule
+1. **[What is IAM?](what-is-iam.md)** - Core concepts and overview
+2. **[Users & Groups](users-and-groups.md)** - Managing team access
+3. **[Roles](roles.md)** - Temporary access for services
+4. **[Policies](policies.md)** - Permission definitions
+5. **[Best Practices](best-practices.md)** - Security guidelines
 
-**NEVER use your AWS root account for daily work!** Always create IAM users/roles. Root account should only be used for account recovery.
+## 🎯 Quick Summary
 
-## 🔑 Key Concepts
+IAM controls **WHO** can access **WHAT** and **WHAT** they can do. It's the foundation of AWS security.
 
-- **Users**: Individual login accounts for people with specific permissions
-- **Roles**: Like job titles - services can assume roles (e.g., EC2 reading from S3)
-- **Policies**: JSON rules defining what you can/cannot do
-- **Groups**: Collections of users with same permissions
-- **Access Keys**: Like passwords for programmatic/API access (rotate every 90 days)
-- **MFA**: Extra security layer - password + code from phone
+| Aspect | Details |
+|--------|---------|
+| **Cost** | FREE! |
+| **Use Cases** | Team access, service permissions, multi-account |
+| **Core Rule** | Never use root account for daily work |
+| **Learning Time** | 2-3 hours to master |
 
-## 🚀 Quick Start
+## 🔑 Core Components
 
-1. ✅ Enable MFA on root account
-2. ✅ Create your first IAM user
-3. ✅ Attach AdministratorAccess policy for testing
-4. ✅ Sign in with IAM user (not root!)
-5. ✅ Review [Security Best Practices](../../best-practices/security-checklist.md)
+| Component | Purpose | Example |
+|-----------|---------|---------|
+| **Users** | Individual person or app | john@company.com |
+| **Groups** | Collection of users | Developers, Admins |
+| **Roles** | Temporary access for services | EC2-S3-Access |
+| **Policies** | JSON defining permissions | "s3:GetObject" |
+| **MFA** | Second authentication factor | Google Authenticator |
 
-## 💡 Common Setup
+## 💡 Real-World Scenario
 
-**For a development team:**
-- Create "developers" group with EC2/S3/RDS permissions
-- Add all developers to this group
-- Create admin user for DevOps with full access
-- Each service gets an IAM role (not a user!)
+```
+Your Company AWS Account
+├─ Root Account (you)
+│  └─ Use ONLY for emergencies
+├─ Production (EC2, RDS)
+│  └─ Accessed via roles (not users)
+├─ Developers (5 people)
+│  └─ All in "Developers" group
+│     └─ Permissions: EC2, S3, CloudWatch
+└─ Finance (2 accountants)
+   └─ All in "Finance" group
+      └─ Permissions: Cost Explorer, Billing
+```
 
-## ⭐ Best Practices
+## 🚀 Common Use Cases
 
-- ✓ Never share credentials
-- ✓ Use strong passwords (16+ characters)
-- ✓ Enable MFA for console access
-- ✓ Rotate access keys every 90 days
-- ✓ Use groups to manage permissions
-- ✓ Apply least-privilege (minimum needed permissions)
-- ✓ Review users/roles monthly
+### Team Member Access
+Create IAM user + add to group = instant access
 
-## 📖 Official Resources
+### EC2 to Database  
+Create role + attach to EC2 = automatic credentials
 
-- [AWS IAM Documentation](https://docs.aws.amazon.com/iam/)
-- [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
-- [Core IAM Basics](../../core-concepts/iam-basics.md)
+### Third-Party Integration
+Create user + limit permissions = Slack can't delete EC2!
+
+## ✅ Best Practices
+
+- ✓ Enable MFA (free!)
+- ✓ Use principle of least privilege
+- ✓ Create groups for team permission management
+- ✓ Use roles for services
+- ✓ Never hardcode credentials
+- ✓ Quarterly audits
+
+## ❌ Never Forget
+
+- ❌ Never use root account for daily work
+- ❌ Never share credentials
+- ❌ Never skip MFA
+- ❌ Never hardcode passwords in code
+
+---
+**Start with**: [What is IAM?](what-is-iam.md)
