@@ -117,7 +117,7 @@ Each service has:
 ## 📚 Related Resources
 
 - **[Main README](../README.md)** - Overall guide structure
-- **[All Services](../ALL_SERVICES.md)** - Complete service list
+- **[All Services](../README.md#-services-by-category)** - Complete service list
 - **[Getting Started](../getting-started/)** - AWS basics
 - **[Core Concepts](../core-concepts/)** - Fundamental knowledge
 - **[Tutorials](../tutorials/)** - Hands-on practice

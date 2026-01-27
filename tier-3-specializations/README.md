@@ -247,7 +247,7 @@ Each service guide includes:
 - **[Tier 1 Foundational](../tier-1-foundational/)** - Essential services
 - **[Tier 2 Common](../tier-2-common/)** - Widely-used services
 - **[Main README](../README.md)** - Overall guide
-- **[All Services](../ALL_SERVICES.md)** - Service list
+- **[All Services](../README.md#-services-by-category)** - Service list
 - **[Tutorials](../tutorials/)** - Hands-on practice
 - **[Best Practices](../best-practices/)** - Production standards
 - **[Service Comparisons](../service-comparisons/)** - Choose tools
