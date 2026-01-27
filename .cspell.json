@@ -1,5 +1,0 @@
-{
-  "version": "0.2",
-  "ignorePaths": ["node_modules", ".git"],
-  "words": ["AWS", "EC2", "S3", "RDS", "Lambda", "IAM", "VPC", "DynamoDB", "Lightsail", "CloudFront", "Route53", "API", "SDK", "CLI", "IaC", "AMI", "ASG", "VPN", "VPC", "ARN", "AZ", "CDN", "CIDR", "EBS", "ECR", "ECS", "EKS", "EMR", "ENI", "FSx", "KMS", "MSK", "NAT", "NAG", "RTO", "RPO", "SLA", "SQS", "SNS", "STS", "WAF", "Fargate", "CloudWatch", "CloudFormation", "CloudTrail", "Config", "Cognito", "SNS", "SQS", "DMS", "Bedrock", "SageMaker", "Rekognition"]
-}
