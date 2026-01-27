@@ -430,4 +430,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Last Updated: January 27, 2026  
-Maintained by: AWS Beginners Guide Community
+
