@@ -1,3 +1,0 @@
-# Lightsail
-
-AWS Lightsail service

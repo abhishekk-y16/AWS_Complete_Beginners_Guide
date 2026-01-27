@@ -1,241 +1,213 @@
-# AWS Beginners Guide 🚀
+# AWS Beginners Guide - Top 30 Services Edition 🚀
 
-A comprehensive, beginner-friendly documentation resource for learning Amazon Web Services (AWS) from the ground up.
+A streamlined, beginner-friendly documentation resource covering the 30 most essential AWS services organized into three learning tiers for progressive mastery.
 
 ## Overview
 
-This repository contains structured, easy-to-follow guides covering all major AWS services organized by category. Whether you're new to cloud computing or looking to expand your AWS knowledge, you'll find helpful tutorials, best practices, and real-world examples.
+This simplified guide focuses on the most important AWS services that cover 80% of real-world use cases. Services are organized into three learning tiers:
+- **Tier 1: Foundational** - Core services everyone must learn
+- **Tier 2: Very Common** - Widely-used services for most applications
+- **Tier 3: Specializations** - Advanced services for specific use cases
 
 ## Quick Navigation
 
-### 🎯 Start Here
+### 🎯 Start Here (Setup & Fundamentals)
 - [What is Cloud Computing?](getting-started/what-is-cloud-computing.md)
 - [What is AWS?](getting-started/what-is-aws.md)
 - [Creating Your AWS Account](getting-started/creating-aws-account.md)
 - [AWS Free Tier Overview](getting-started/aws-free-tier.md)
 
-### 🏗️ Core Concepts
+### 🏗️ Core Concepts (Must Know Before Services)
 - [Regions and Availability Zones](core-concepts/regions-and-availability-zones.md)
 - [IAM Basics](core-concepts/iam-basics.md)
 - [VPC Fundamentals](core-concepts/vpc-fundamentals.md)
 - [AWS Pricing Models](core-concepts/pricing-models.md)
 
-### 🖥️ Compute Services
-- **[EC2 - Elastic Compute Cloud](compute/ec2/README.md)** - Virtual servers in the cloud
-- **[Lambda](compute/lambda/README.md)** - Serverless compute
-- [Lightsail](compute/lightsail/README.md) - Simplified instances
-- [Elastic Beanstalk](compute/elastic-beanstalk/README.md) - Easy web app deployment
+---
 
-### 💾 Storage Services
-- **[S3 - Simple Storage Service](storage/s3/README.md)** - Object storage
-- [EBS - Elastic Block Store](storage/ebs/README.md) - Block storage for EC2
-- [EFS - Elastic File System](storage/efs/README.md) - Managed file storage
-- [Glacier](storage/glacier/README.md) - Long-term archive storage
+## 📚 TIER 1: FOUNDATIONAL SERVICES (Start Here!)
 
-### 🗄️ Database Services
-- [RDS - Relational Database Service](database/rds/README.md) - Managed relational databases
-- [DynamoDB](database/dynamodb/README.md) - NoSQL database
-- [Aurora](database/aurora/README.md) - High-performance relational database
-- [ElastiCache](database/elasticache/README.md) - In-memory caching
+These 7 services form the foundation of AWS. Learn these first before moving to other tiers.
 
-### 🌐 Networking & Content Delivery
-- [VPC - Virtual Private Cloud](networking/vpc/README.md) - Your own network
-- [CloudFront](networking/cloudfront/README.md) - CDN and edge locations
-- [Route 53](networking/route53/README.md) - DNS and domain management
-- [API Gateway](networking/api-gateway/README.md) - Create and manage APIs
+| Service | What It Does | Best For |
+|---------|-------------|----------|
+| **[EC2](tier-1-foundational/ec2/README.md)** | Virtual servers in the cloud | Running applications, web servers, databases |
+| **[S3](tier-1-foundational/s3/README.md)** | Object/file storage in the cloud | Storing files, backups, static websites |
+| **[IAM](tier-1-foundational/iam/README.md)** | User & permission management | Security, access control, team management |
+| **[VPC](tier-1-foundational/vpc/README.md)** | Your own private network on AWS | Network isolation, security, connectivity |
+| **[Lambda](tier-1-foundational/lambda/README.md)** | Serverless code execution | Running code without managing servers |
+| **[RDS](tier-1-foundational/rds/README.md)** | Managed relational databases | Storing structured data (SQL databases) |
+| **[CloudFormation](tier-1-foundational/cloudformation/README.md)** | Infrastructure as code | Automating & replicating infrastructure |
 
-### 🔐 Security & Identity
-- [IAM - Identity and Access Management](security/iam/README.md) - User and permission management
-- [Cognito](security/cognito/README.md) - User authentication
-- [KMS - Key Management Service](security/kms/README.md) - Encryption key management
-- [WAF - Web Application Firewall](security/waf/README.md) - Protection from web attacks
+---
 
-### 📦 Containers
-- [ECS - Elastic Container Service](containers/ecs/README.md)
-- [EKS - Elastic Kubernetes Service](containers/eks/README.md)
-- [ECR - Elastic Container Registry](containers/ecr/README.md)
+## 🔧 TIER 2: VERY COMMON SERVICES (Learn After Tier 1)
 
-### 📊 Analytics
-- [Athena](analytics/athena/README.md) - Query data in S3 with SQL
-- [Redshift](analytics/redshift/README.md) - Data warehouse
-- [Kinesis](analytics/kinesis/README.md) - Real-time data streaming
+These 10 services are essential for building real applications. Used in ~70% of AWS deployments.
 
-### 🤖 Machine Learning
-- [SageMaker](machine-learning/sagemaker/README.md) - Build ML models
-- [Bedrock](machine-learning/bedrock/README.md) - Generative AI
-- [Rekognition](machine-learning/rekognition/README.md) - Image recognition
+| Service | What It Does | Best For |
+|---------|-------------|----------|
+| **[DynamoDB](tier-2-common/dynamodb/README.md)** | NoSQL database | Fast, scalable, flexible databases |
+| **[EBS](tier-2-common/ebs/README.md)** | Block storage volumes for EC2 | Persistent storage for virtual servers |
+| **[CloudFront](tier-2-common/cloudfront/README.md)** | Content delivery network (CDN) | Speeding up content delivery worldwide |
+| **[Route 53](tier-2-common/route53/README.md)** | DNS & domain management | Routing traffic, registering domains |
+| **[Elastic Beanstalk](tier-2-common/elastic-beanstalk/README.md)** | Easy web app deployment | Quick app deployment without managing infrastructure |
+| **[KMS](tier-2-common/kms/README.md)** | Key management for encryption | Securing data with encryption keys |
+| **[Cognito](tier-2-common/cognito/README.md)** | User authentication & management | Managing app users, login systems |
+| **[CloudWatch](tier-2-common/cloudwatch/README.md)** | Monitoring & logging | Tracking application performance & health |
+| **[Auto Scaling](tier-2-common/auto-scaling/README.md)** | Automatic capacity management | Scaling servers up/down based on demand |
+| **[API Gateway](tier-2-common/api-gateway/README.md)** | Create & manage APIs | Building REST APIs for applications |
 
-### 📚 Learning Resources
+---
 
-#### Tutorials
-- [S3 Static Website Hosting](tutorials/s3-static-website.md) ⭐ Complete step-by-step
+## 🎯 TIER 3: SPECIALIZATION SERVICES (Advanced Topics)
+
+These 12 services cover specific use cases. Choose based on your needs.
+
+| Service | What It Does | Best For |
+|---------|-------------|----------|
+| **[ECS](tier-3-specializations/ecs/README.md)** | Container orchestration | Running Docker containers |
+| **[EKS](tier-3-specializations/eks/README.md)** | Kubernetes on AWS | Production-grade container orchestration |
+| **[ECR](tier-3-specializations/ecr/README.md)** | Container image registry | Storing & managing Docker images |
+| **[ElastiCache](tier-3-specializations/elasticache/README.md)** | In-memory caching | Speeding up database queries |
+| **[Aurora](tier-3-specializations/aurora/README.md)** | High-performance database | Enterprise-grade relational database |
+| **[Glacier](tier-3-specializations/glacier/README.md)** | Long-term file archival | Archiving rarely-accessed data cheaply |
+| **[Systems Manager](tier-3-specializations/systems-manager/README.md)** | Infrastructure operations | Managing & patching servers |
+| **[CloudTrail](tier-3-specializations/cloudtrail/README.md)** | Audit logging | Tracking all AWS activity |
+| **[Backup](tier-3-specializations/backup/README.md)** | Centralized backup management | Backing up resources across AWS |
+| **[Organizations](tier-3-specializations/organizations/README.md)** | Multi-account management | Managing multiple AWS accounts |
+| **[Config](tier-3-specializations/config/README.md)** | Configuration tracking | Monitoring infrastructure compliance |
+| **[CodePipeline](tier-3-specializations/codepipeline/README.md)** | CI/CD automation | Automating deployment pipelines |
+
+---
+
+## 📚 Learning Resources
+
+### 📖 Tutorials (Hands-On Practice)
+- [S3 Static Website Hosting](tutorials/s3-static-website.md) ⭐ Best for Tier 1 beginners
 - [Deploy a Web Server on EC2](tutorials/deploy-web-server.md)
 - [Build a Serverless API](tutorials/serverless-api.md)
 - [Create Your First RDS Database](tutorials/rds-first-database.md)
 - [Lambda + S3 Processing](tutorials/lambda-s3-processing.md)
-- [CI/CD Pipeline with CodePipeline](tutorials/cicd-pipeline.md)
-- [Full Stack Application Deployment](tutorials/full-stack-deployment.md)
 
-#### Use Cases
-- [Web Hosting](use-cases/web-hosting.md)
-- [Data Backup and Recovery](use-cases/data-backup.md)
-- [Mobile App Backend](use-cases/mobile-backend.md)
-- [Data Analytics](use-cases/data-analytics.md)
-- [Disaster Recovery](use-cases/disaster-recovery.md)
+### 🎯 Use Cases (Real-World Scenarios)
+- [Web Hosting](use-cases/web-hosting.md) - Host your website on AWS
+- [Data Backup and Recovery](use-cases/data-backup.md) - Protect your data
+- [Mobile App Backend](use-cases/mobile-backend.md) - APIs for mobile apps
+- [Disaster Recovery](use-cases/disaster-recovery.md) - Business continuity
 
-#### Service Comparisons
-- [EC2 vs Lambda](service-comparisons/ec2-vs-lambda.md)
-- [RDS vs DynamoDB](service-comparisons/rds-vs-dynamodb.md)
-- [S3 vs EBS vs EFS](service-comparisons/s3-vs-ebs-vs-efs.md)
-- [ECS vs EKS vs Fargate](service-comparisons/ecs-vs-eks-vs-fargate.md)
+### 🔄 Service Comparisons (Choose the Right Tool)
+- [EC2 vs Lambda](service-comparisons/ec2-vs-lambda.md) - When to use each
+- [RDS vs DynamoDB](service-comparisons/rds-vs-dynamodb.md) - Database choice
+- [S3 vs EBS](service-comparisons/s3-vs-ebs.md) - Storage options
+- [ECS vs EKS](service-comparisons/ecs-vs-eks.md) - Container options
 
-#### Best Practices
+### ⭐ Best Practices (Industry Standards)
 - [Cost Optimization](best-practices/cost-optimization.md)
 - [Security Checklist](best-practices/security-checklist.md)
 - [Performance Optimization](best-practices/performance-optimization.md)
 - [Tagging Strategy](best-practices/tagging-strategy.md)
-- [Backup Strategy](best-practices/backup-strategy.md)
 
-#### Troubleshooting
+### 🔧 Troubleshooting (Fix Common Issues)
 - [Common Errors Guide](troubleshooting/common-errors.md)
 - [EC2 Issues](troubleshooting/ec2-issues.md)
 - [S3 Issues](troubleshooting/s3-issues.md)
 - [Lambda Issues](troubleshooting/lambda-issues.md)
-- [Networking Issues](troubleshooting/networking-issues.md)
 
-#### Additional Resources
-- [AWS Glossary](glossary/README.md)
+### 📚 Additional Resources
+- [AWS Glossary](glossary/README.md) - Key terms explained
 - [Official AWS Links](resources/official-links.md)
-- [Learning Paths](resources/learning-paths.md)
-- [Certification Guides](resources/certification-guide.md)
 - [Free Tier Services](resources/free-tier-services.md)
-
-## 📋 All AWS Services
-
-This guide covers **100+ AWS services** organized by category:
-
-- **Compute:** EC2, Lambda, Lightsail, Elastic Beanstalk, Batch, App Runner, and more
-- **Storage:** S3, EBS, EFS, Glacier, FSx, Storage Gateway, Backup
-- **Database:** RDS, DynamoDB, Aurora, ElastiCache, Neptune, DocumentDB, and more
-- **Networking:** VPC, CloudFront, Route 53, API Gateway, Direct Connect
-- **Security:** IAM, Cognito, KMS, WAF, Shield, GuardDuty, Secrets Manager
-- **Containers:** ECS, EKS, ECR, Fargate
-- **Analytics:** Athena, Redshift, Kinesis, Glue, EMR, MSK, QuickSight
-- **Machine Learning:** SageMaker, Bedrock, Rekognition, Comprehend, Polly, Transcribe
-- **Developer Tools:** CodeCommit, CodeBuild, CodeDeploy, CodePipeline, Cloud9
-- **Management:** CloudWatch, CloudFormation, CloudTrail, Config, Organizations
-- **Migration:** Database Migration Service, Application Migration Service, DataSync
-- **And More:** Media services, IoT, Blockchain, and specialized services
-
-See [All Services](ALL_SERVICES.md) for the complete list.
-
-## 🎓 Learning Approach
-
-This guide is designed with these principles:
-
-1. **Beginner-Friendly:** No prior AWS experience required
-2. **Hands-On:** Includes practical tutorials and examples
-3. **Well-Organized:** Services grouped by function and use case
-4. **Practical:** Focus on real-world scenarios and best practices
-5. **Updated:** Regular updates to reflect AWS changes
-
-## 📊 Repository Statistics
-
-- **100+ Services Documented**
-- **18+ Hands-on Tutorials**
-- **9+ Use Cases**
-- **6+ Service Comparisons**
-- **10+ Best Practices Guides**
-- **9+ Troubleshooting Guides**
-
-## 🚀 Quick Start
-
-1. **New to AWS?** Start with [Getting Started](getting-started/README.md)
-2. **Want to build something?** Check out [Tutorials](tutorials/README.md)
-3. **Comparing services?** See [Service Comparisons](service-comparisons/README.md)
-4. **Having issues?** Visit [Troubleshooting](troubleshooting/README.md)
-5. **Learning a specific service?** Browse [All Services](#-all-aws-services)
-
-## 💡 Key Features
-
-✅ **Structured Learning Path** - From basics to advanced  
-✅ **100+ Services Covered** - All major AWS services  
-✅ **18+ Complete Tutorials** - Step-by-step guides  
-✅ **Real-World Examples** - Practical use cases  
-✅ **Best Practices** - Industry-standard recommendations  
-✅ **Free Tier Focus** - Budget-friendly learning  
-✅ **Regularly Updated** - Keeping up with AWS changes  
-✅ **Community-Driven** - Open for contributions  
-
-## 📖 Documentation Standards
-
-All documentation follows consistent formatting for easy navigation:
-
-- Clear section headers
-- Code examples where applicable
-- Links to official AWS documentation
-- Related topics and references
-- Visual diagrams and flowcharts (where helpful)
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Whether you want to:
-
-- Fix typos or errors
-- Add new tutorials
-- Improve existing documentation
-- Suggest new topics
-- Translate content
-
-Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-## 📋 Code of Conduct
-
-This project is committed to providing a welcoming and inclusive environment. Please read our [Code of Conduct](CODE_OF_CONDUCT.md).
-
-## 📄 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
-
-## 🔒 Security
-
-If you discover a security vulnerability, please email security@awsbeginnersguide.dev instead of using the issue tracker. See [Security Policy](SECURITY.md) for details.
-
-## 📞 Support
-
-- **Questions?** Open a [Discussion](https://github.com/yourname/aws-beginners-guide/discussions)
-- **Found a bug?** Create an [Issue](https://github.com/yourname/aws-beginners-guide/issues)
-- **Have an idea?** Submit a [Feature Request](https://github.com/yourname/aws-beginners-guide/issues/new?template=feature_request.md)
-
-## 🙏 Acknowledgments
-
-- AWS for providing comprehensive cloud services
-- The open-source community for tools and inspiration
-- All contributors who make this guide better
-- The learners who drive continuous improvement
-
-## 📚 Additional Resources
-
-- [AWS Official Documentation](https://docs.aws.amazon.com/)
-- [AWS Free Tier](https://aws.amazon.com/free/)
-- [AWS Learning Library](https://www.aws.training/)
-- [AWS Certification Paths](https://aws.amazon.com/certification/)
 
 ---
 
-## Getting Started Tips
+## 🎓 Recommended Learning Path
+
+### Week 1-2: Tier 1 Foundations
+1. Complete [Core Concepts](core-concepts/README.md)
+2. Study [IAM](tier-1-foundational/iam/README.md) & [VPC](tier-1-foundational/vpc/README.md)
+3. Try [EC2 tutorial](tutorials/deploy-web-server.md)
+
+### Week 3-4: Storage & Databases (Tier 1)
+4. Learn [S3](tier-1-foundational/s3/README.md)
+5. Try [S3 Website Hosting](tutorials/s3-static-website.md)
+6. Learn [RDS](tier-1-foundational/rds/README.md)
+
+### Week 5-6: Serverless & Infrastructure (Tier 1)
+7. Learn [Lambda](tier-1-foundational/lambda/README.md)
+8. Try [Serverless API tutorial](tutorials/serverless-api.md)
+9. Learn [CloudFormation](tier-1-foundational/cloudformation/README.md)
+
+### Week 7+: Tier 2 & Tier 3 (Specializations)
+10. Choose services based on your project needs
+11. Review [Best Practices](best-practices/README.md)
+12. Build real projects!
+
+## 📊 This Guide Covers
+
+**29 Most Important AWS Services** organized into 3 learning tiers:
+- **Tier 1:** 7 foundational services (everyone needs these)
+- **Tier 2:** 10 common services (used in most projects)
+- **Tier 3:** 12 specialized services (choose based on your needs)
+
+## 🎓 Learning Approach
+
+This simplified guide focuses on **quality over quantity** with these principles:
+
+1. **Top 30 Focus:** Only the most important AWS services
+2. **Beginner-Friendly:** Clear explanations suitable for newcomers
+3. **Tier-Based Learning:** Progress from foundational → common → specialized
+4. **Hands-On:** Real tutorials and practical examples
+5. **Up-to-Date:** Latest AWS best practices
+
+## 💡 Key Principles
+
+✅ **Simplified:** Only essential services (no overwhelming options)  
+✅ **Structured:** Tier-based learning progression  
+✅ **Practical:** Tutorials and real-world examples  
+✅ **Focused:** Quality over quantity  
+✅ **Beginner-Friendly:** Easy-to-understand explanations  
+✅ **Best Practices:** Industry-standard recommendations  
+
+## 🚀 Getting Started
 
 ### For Complete Beginners:
-1. Read [What is Cloud Computing?](getting-started/what-is-cloud-computing.md)
-2. Set up your [AWS Account](getting-started/creating-aws-account.md)
-3. Explore the [AWS Console](getting-started/aws-console-overview.md)
-4. Follow your first [Hands-on Tutorial](tutorials/README.md)
+1. Start with [Getting Started](getting-started/README.md)
+2. Learn [Core Concepts](core-concepts/README.md)
+3. Follow the [Recommended Learning Path](#recommended-learning-path)
+4. Complete Tier 1 tutorials first
 
-### For Developers:
-1. Review [Core Concepts](core-concepts/README.md)
-2. Choose a service to learn ([Compute](compute/README.md), [Storage](storage/README.md), etc.)
-3. Complete a [Tutorial](tutorials/README.md)
-4. Check [Best Practices](best-practices/README.md)
+### For Experienced Developers:
+1. Review [Tier 1 Services](#-tier-1-foundational-services-start-here) quickly
+2. Jump to Tier 2 & 3 as needed
+3. Check [Best Practices](best-practices/README.md)
+4. Use [Service Comparisons](service-comparisons/README.md) to choose tools  
+
+## � What's New (Simplified Edition)
+
+This is a **drastically simplified** version of the AWS Beginners Guide:
+- ✂️ **Reduced from 100+ services to 29** - Eliminates overwhelm
+- 🎯 **Tier-based learning** - Clear progression path
+- 📚 **Focused content** - Quality over quantity
+- 🚀 **Faster to learn** - Less time lost on niche services
+
+---
+
+## 📞 Support & Contributing
+
+- **Questions?** Check [FAQs in Tutorials](tutorials/README.md)
+- **Found an issue?** Create a GitHub Issue
+- **Want to contribute?** See [Contributing Guidelines](CONTRIBUTING.md)
+
+## 📄 License & Security
+
+- **License:** MIT License - see [LICENSE](LICENSE)
+- **Security:** See [Security Policy](SECURITY.md)
+- **Code of Conduct:** [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+
+---
+
+**Happy learning! Start with Tier 1, progress at your own pace, and build amazing things on AWS.** 🚀
 
 ### For System Administrators:
 1. Understand [IAM](security/iam/README.md) and [VPC](networking/vpc/README.md)

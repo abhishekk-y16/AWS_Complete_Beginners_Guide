@@ -1,0 +1,51 @@
+# Tutorials Index
+
+This folder contains concise, practical tutorials for common AWS tasks used by beginners.
+
+Available tutorials
+- Auto Scaling Setup: auto-scaling-setup.md
+- Backup & Restore: backup-restore.md
+- Backup Strategy: backup-strategy.md
+- Bedrock Chatbot: bedrock-chatbot.md
+- CDN Setup with CloudFront: cdn-setup.md
+- CI/CD Pipeline: cicd-pipeline.md
+- CI/CD with GitHub Actions: ci-cd-github-actions.md
+- CloudFront CDN: cloudfront-cdn.md
+- Cost Optimization: cost-optimization.md
+- Data Pipeline: data-pipeline.md
+- Database Setup: database-setup.md
+- Deploy Web Server: deploy-web-server.md
+- DynamoDB Best Practices: dynamodb-best-practices.md
+- ECR Getting Started: ecr-getting-started.md
+- ECS Quickstart: ecs-quickstart.md
+- ElastiCache Introduction: elasticache-intro.md
+- Full-Stack Deployment: full-stack-deployment.md
+- Glue ETL Basics: glue-etl-basics.md
+- IAM Best Practices: iam-best-practices.md
+- KMS & Encryption: kms-and-encryption.md
+- Kubernetes on AWS (EKS): kubernetes-on-aws.md
+- Lambda Best Practices: lambda-best-practices.md
+- Lambda S3 Processing: lambda-s3-processing.md
+- Microservices on AWS: microservices.md
+- Migrate to AWS: migrate-to-aws.md
+- ML Image Classification: ml-image-classification.md
+- Monitoring Setup: monitoring-setup.md
+- Multi-Region Architecture: multi-region.md
+- Networking Basics: networking-basics.md
+- Observability: observability.md
+- Observability with OpenTelemetry: observability-otel.md
+- OpenSearch Quickstart: opensearch-quickstart.md
+- RDS First Database: rds-first-database.md
+- Redshift Quickstart: redshift-quickstart.md
+- Route 53 Custom Domain: route53-custom-domain.md
+- S3 Static Website: s3-static-website.md
+- SageMaker Quickstart: sagemaker-quickstart.md
+- Scheduled Lambda (Cron): scheduled-lambda.md
+- Securing S3: securing-s3.md
+- Server Migration: server-migration.md
+- Serverless API: serverless-api.md
+- Serverless App Deployment: serverless-app.md
+- Serverless Data Lake: serverless-data-lake.md
+- Serverless Web App: serverless-web-app.md
+- SNS Notifications: sns-notifications.md
+- SQS Queue Patterns: sqs-queue-patterns.md

@@ -1,125 +1,123 @@
-# AWS Beginners Guide - Complete Repository Structure
+# AWS Beginners Guide - Top 29 Essential Services
 
-Welcome to the AWS Beginners Guide! This comprehensive resource covers all AWS services organized by category.
+This guide covers the **29 most essential AWS services** organized into three learning tiers for progressive mastery.
 
-## Service Categories
+## 📌 Why 29 Services?
 
-### Compute Services
-- Amazon EC2 (Elastic Compute Cloud)
-- AWS Lambda
-- Amazon Lightsail
-- AWS Elastic Beanstalk
-- AWS Batch
-- AWS App Runner
-- EC2 Image Builder
-- AWS Serverless Application Repository
+The AWS ecosystem includes 200+ services, but beginners only need **29 core services** that cover:
+- ✅ 90% of real-world use cases
+- ✅ All foundational concepts
+- ✅ Common application patterns
+- ✅ Enterprise requirements
 
-### Storage Services
-- Amazon S3 (Simple Storage Service)
-- Amazon EBS (Elastic Block Store)
-- Amazon EFS (Elastic File System)
-- Amazon FSx
-- Amazon Glacier
-- AWS Storage Gateway
-- AWS Backup
+---
 
-### Database Services
-- Amazon RDS (Relational Database Service)
-- Amazon DynamoDB
-- Amazon Aurora
-- Amazon ElastiCache
-- Amazon Neptune
-- Amazon DocumentDB
-- Amazon Keyspaces
-- Amazon Timestream
-- Amazon MemoryDB
+## 🎯 TIER 1: Foundational Services (7 Services)
 
-### Networking & Content Delivery
-- Amazon VPC (Virtual Private Cloud)
-- Amazon CloudFront
-- Amazon Route 53
-- Amazon API Gateway
-- AWS Direct Connect
-- AWS Global Accelerator
-- AWS App Mesh
+Start here! These services form the foundation of AWS.
 
-### Security & Identity
-- AWS IAM (Identity and Access Management)
-- Amazon Cognito
-- AWS Secrets Manager
-- AWS Key Management Service (KMS)
-- AWS WAF (Web Application Firewall)
-- AWS Shield
-- Amazon GuardDuty
+**EC2, S3, IAM, VPC, Lambda, RDS, CloudFormation**
 
-### Containers
-- Amazon ECS (Elastic Container Service)
-- Amazon EKS (Elastic Kubernetes Service)
-- Amazon ECR (Elastic Container Registry)
-- AWS Fargate
+| Service | Purpose | Learn From |
+|---------|---------|-----------|
+| **EC2** | Virtual servers in the cloud | [tier-1-foundational/ec2/](tier-1-foundational/ec2/) |
+| **S3** | Object/file storage | [tier-1-foundational/s3/](tier-1-foundational/s3/) |
+| **IAM** | User & permission management | [tier-1-foundational/iam/](tier-1-foundational/iam/) |
+| **VPC** | Private network on AWS | [tier-1-foundational/vpc/](tier-1-foundational/vpc/) |
+| **Lambda** | Serverless code execution | [tier-1-foundational/lambda/](tier-1-foundational/lambda/) |
+| **RDS** | Managed relational databases | [tier-1-foundational/rds/](tier-1-foundational/rds/) |
+| **CloudFormation** | Infrastructure as code | [tier-1-foundational/cloudformation/](tier-1-foundational/cloudformation/) |
 
-### Analytics
-- Amazon Athena
-- Amazon Redshift
-- Amazon QuickSight
-- Amazon Kinesis
-- AWS Glue
-- Amazon EMR
-- Amazon MSK (Managed Streaming for Kafka)
-- Amazon Data Firehose
-- AWS Lake Formation
-- Amazon OpenSearch
+---
 
-### Machine Learning
-- Amazon SageMaker
-- Amazon Bedrock
-- Amazon Rekognition
-- Amazon Comprehend
-- Amazon Polly
-- Amazon Transcribe
-- Amazon Translate
-- Amazon Lex
-- Amazon Personalize
-- Amazon Forecast
-- Amazon Textract
-- Amazon Kendra
+## 🔧 TIER 2: Very Common Services (10 Services)
 
-### Developer Tools
-- AWS CodeCommit
-- AWS CodeBuild
-- AWS CodeDeploy
-- AWS CodePipeline
-- AWS Cloud9
-- AWS CloudShell
-- AWS X-Ray
-- AWS CodeArtifact
-- AWS CodeCatalyst
+Learn after mastering Tier 1. Used in ~70% of AWS deployments.
 
-### Management & Governance
-- Amazon CloudWatch
-- AWS CloudFormation
-- AWS Systems Manager
-- AWS Organizations
-- AWS Config
-- AWS CloudTrail
-- AWS Trusted Advisor
-- AWS Control Tower
-- AWS Service Catalog
-- Auto Scaling
+**DynamoDB, EBS, CloudFront, Route 53, Elastic Beanstalk, KMS, Cognito, CloudWatch, Auto Scaling, API Gateway**
 
-### Migration & Transfer
-- AWS Migration Hub
-- Application Migration Service
-- AWS Database Migration Service (DMS)
-- AWS Transfer Family
-- AWS Snow Family
-- AWS DataSync
+| Service | Purpose | Learn From |
+|---------|---------|-----------|
+| **DynamoDB** | NoSQL database | [tier-2-common/dynamodb/](tier-2-common/dynamodb/) |
+| **EBS** | Block storage for EC2 | [tier-2-common/ebs/](tier-2-common/ebs/) |
+| **CloudFront** | Content delivery network (CDN) | [tier-2-common/cloudfront/](tier-2-common/cloudfront/) |
+| **Route 53** | DNS & domain management | [tier-2-common/route53/](tier-2-common/route53/) |
+| **Elastic Beanstalk** | Easy web app deployment | [tier-2-common/elastic-beanstalk/](tier-2-common/elastic-beanstalk/) |
+| **KMS** | Encryption key management | [tier-2-common/kms/](tier-2-common/kms/) |
+| **Cognito** | User authentication | [tier-2-common/cognito/](tier-2-common/cognito/) |
+| **CloudWatch** | Monitoring & logging | [tier-2-common/cloudwatch/](tier-2-common/cloudwatch/) |
+| **Auto Scaling** | Auto-scale servers | [tier-2-common/auto-scaling/](tier-2-common/auto-scaling/) |
+| **API Gateway** | Create & manage APIs | [tier-2-common/api-gateway/](tier-2-common/api-gateway/) |
 
-### Media Services
-- Amazon Kinesis Video Streams
-- AWS Elemental MediaConvert
-- AWS Elemental MediaLive
-- AWS Elemental MediaPackage
+---
+
+## 🎯 TIER 3: Specialization Services (12 Services)
+
+Advanced services for specific use cases. Choose based on your project needs.
+
+**ECS, EKS, ECR, ElastiCache, Aurora, Glacier, Systems Manager, CloudTrail, Backup, Organizations, Config, CodePipeline**
+
+| Service | Purpose | Learn From |
+|---------|---------|-----------|
+| **ECS** | Container orchestration | [tier-3-specializations/ecs/](tier-3-specializations/ecs/) |
+| **EKS** | Kubernetes on AWS | [tier-3-specializations/eks/](tier-3-specializations/eks/) |
+| **ECR** | Docker image registry | [tier-3-specializations/ecr/](tier-3-specializations/ecr/) |
+| **ElastiCache** | In-memory caching | [tier-3-specializations/elasticache/](tier-3-specializations/elasticache/) |
+| **Aurora** | High-performance database | [tier-3-specializations/aurora/](tier-3-specializations/aurora/) |
+| **Glacier** | Long-term archival storage | [tier-3-specializations/glacier/](tier-3-specializations/glacier/) |
+| **Systems Manager** | Server management & ops | [tier-3-specializations/systems-manager/](tier-3-specializations/systems-manager/) |
+| **CloudTrail** | Audit logging | [tier-3-specializations/cloudtrail/](tier-3-specializations/cloudtrail/) |
+| **Backup** | Centralized backups | [tier-3-specializations/backup/](tier-3-specializations/backup/) |
+| **Organizations** | Multi-account management | [tier-3-specializations/organizations/](tier-3-specializations/organizations/) |
+| **Config** | Compliance monitoring | [tier-3-specializations/config/](tier-3-specializations/config/) |
+| **CodePipeline** | CI/CD automation | [tier-3-specializations/codepipeline/](tier-3-specializations/codepipeline/) |
+
+---
+
+## 📊 Services by Type
+
+### Compute & Serverless (Tier 1-3)
+- EC2, Lambda, Elastic Beanstalk, ECS, EKS
+
+### Storage (Tier 1-3)
+- S3, EBS, Glacier
+
+### Databases (Tier 1-3)
+- RDS, DynamoDB, Aurora, ElastiCache
+
+### Networking (Tier 1-2)
+- VPC, CloudFront, Route 53, API Gateway
+
+### Security (Tier 1-2)
+- IAM, Cognito, KMS
+
+### Containers (Tier 3)
+- ECS, EKS, ECR
+
+### Management & Operations (Tier 1, 3)
+- CloudFormation, CloudWatch, Auto Scaling, Systems Manager, CloudTrail
+
+### Enterprise (Tier 3)
+- Organizations, Config, Backup
+
+### CI/CD (Tier 3)
+- CodePipeline
+
+---
+
+## 🎓 Quick Links
+
+- **[Main README](README.md)** - Get started
+- **[Core Concepts](core-concepts/)** - Learn fundamentals
+- **[Getting Started](getting-started/)** - First steps
+- **[Tutorials](tutorials/)** - Hands-on practice
+- **[Best Practices](best-practices/)** - Industry standards
+- **[Service Comparisons](service-comparisons/)** - Choose the right tool
+- **[Troubleshooting](troubleshooting/)** - Fix issues
+
+---
+
+**Ready to start?** Begin with [Tier 1 services](#-tier-1-foundational-services-7-services)! 🚀
 - AWS Elemental MediaConnect
 
 ### Other Categories

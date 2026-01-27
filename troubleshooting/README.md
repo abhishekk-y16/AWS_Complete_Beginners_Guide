@@ -1,9 +1,8 @@
 # Troubleshooting
 
-# AWS Beginners Guide
+Quick guides to resolve common AWS issues (billing, networking, IAM, EC2, Lambda, S3).
 
-This section contains curated documentation to help you get started.
-
-## Contents
-
-See subdirectories for detailed information.
+How to use
+- Start with common-errors for generic fixes.
+- Jump to service-specific guides (EC2, S3, Lambda, IAM, networking).
+- Use Logs Insights + metrics + traces for evidence before changes.

@@ -1,9 +1,11 @@
-# Service-Comparisons
+# Service Comparisons
 
-# AWS Beginners Guide
+Side-by-side guidance to pick the right AWS service for common decisions.
 
-This section contains curated documentation to help you get started.
-
-## Contents
-
-See subdirectories for detailed information.
+Covered
+- EC2 vs Lambda
+- RDS vs DynamoDB
+- ECS vs EKS vs Fargate
+- S3 vs EBS vs EFS
+- CloudWatch vs X-Ray
+- Cognito vs IAM
