@@ -272,7 +272,7 @@ These 12 services cover specific use cases. Choose based on your needs.
 
 ## �📚 Learning Resources
 
-### 📖 Tutorials (Hands-On Practice)
+### � Tutorials (Hands-On Practice)
 - [S3 Static Website Hosting](tutorials/s3-static-website.md) ⭐ Best for Tier 1 beginners
 - [Deploy a Web Server on EC2](tutorials/deploy-web-server.md)
 - [Build a Serverless API](tutorials/serverless-api.md)
@@ -285,7 +285,7 @@ These 12 services cover specific use cases. Choose based on your needs.
 - [Mobile App Backend](use-cases/mobile-backend.md) - APIs for mobile apps
 - [Disaster Recovery](use-cases/disaster-recovery.md) - Business continuity
 
-### 🔧 Troubleshooting (Fix Common Issues)
+### �🔧 Troubleshooting (Fix Common Issues)
 - [Common Errors Guide](troubleshooting/common-errors.md)
 - [EC2 Issues](troubleshooting/ec2-issues.md)
 - [S3 Issues](troubleshooting/s3-issues.md)
@@ -346,15 +346,15 @@ This simplified guide focuses on **quality over quantity** with these principles
 ## 🚀 Getting Started
 
 ### For Complete Beginners:
-1. Start with [Getting Started](getting-started/README.md)
-2. Learn [Core Concepts](core-concepts/README.md)
-3. Follow the [Recommended Learning Path](#recommended-learning-path)
-4. Study Tier 1 services in-depth
+1. Start with the basics - [What is AWS?](getting-started/what-is-aws.md)
+2. Learn [Core Concepts](core-concepts/regions-and-availability-zones.md) - Regions, IAM, VPC, Pricing
+3. Follow the [Recommended Learning Path](#-recommended-learning-path)
+4. Study Tier 1 services in-depth: EC2, S3, RDS, Lambda, VPC, IAM, CloudFormation
 
 ### For Experienced Developers:
 1. Review [Tier 1 Services](#-tier-1-foundational-services-start-here) quickly
-2. Jump to Tier 2 & 3 as needed
-3. Check [Best Practices](best-practices/README.md)  
+2. Jump to [Tier 2](#-tier-2-very-common-services-learn-after-tier-1) & [Tier 3](#-tier-3-specialization-services-advanced-topics) as needed
+3. Check [Best Practices](best-practices/cost-optimization.md) for industry standards  
 
 ## � What's New (Simplified Edition)
 
