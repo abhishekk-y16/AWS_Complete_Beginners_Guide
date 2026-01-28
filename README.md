@@ -346,15 +346,16 @@ This simplified guide focuses on **quality over quantity** with these principles
 ## 🚀 Getting Started
 
 ### For Complete Beginners:
-1. Start with the basics - [What is AWS?](getting-started/what-is-aws.md)
-2. Learn [Core Concepts](core-concepts/regions-and-availability-zones.md) - Regions, IAM, VPC, Pricing
-3. Follow the [Recommended Learning Path](#-recommended-learning-path)
-4. Study Tier 1 services in-depth: EC2, S3, RDS, Lambda, VPC, IAM, CloudFormation
+1. Start with [What is Cloud Computing?](getting-started/what-is-cloud-computing.md)
+2. Then [What is AWS?](getting-started/what-is-aws.md)
+3. Learn [Core Concepts](core-concepts/vpc-fundamentals.md) - VPC, IAM, Regions, Pricing
+4. Follow the [Recommended Learning Path](#%EF%B8%8F-recommended-learning-paths-by-role)
+5. Study Tier 1 services: [EC2](tier-1-foundational/ec2/README.md), [S3](tier-1-foundational/s3/README.md), [RDS](tier-1-foundational/rds/README.md), [Lambda](tier-1-foundational/lambda/README.md)
 
 ### For Experienced Developers:
 1. Review [Tier 1 Services](#-tier-1-foundational-services-start-here) quickly
 2. Jump to [Tier 2](#-tier-2-very-common-services-learn-after-tier-1) & [Tier 3](#-tier-3-specialization-services-advanced-topics) as needed
-3. Check [Best Practices](best-practices/cost-optimization.md) for industry standards  
+3. Check [Best Practices](best-practices/security-checklist.md) for standards  
 
 ## � What's New (Simplified Edition)
 
