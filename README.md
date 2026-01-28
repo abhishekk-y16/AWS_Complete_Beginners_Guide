@@ -285,18 +285,6 @@ These 12 services cover specific use cases. Choose based on your needs.
 - [Mobile App Backend](use-cases/mobile-backend.md) - APIs for mobile apps
 - [Disaster Recovery](use-cases/disaster-recovery.md) - Business continuity
 
-### 🔄 Service Comparisons (Choose the Right Tool)
-- [EC2 vs Lambda](service-comparisons/ec2-vs-lambda.md) - When to use each
-- [RDS vs DynamoDB](service-comparisons/rds-vs-dynamodb.md) - Database choice
-- [S3 vs EBS](service-comparisons/s3-vs-ebs.md) - Storage options
-- [ECS vs EKS](service-comparisons/ecs-vs-eks.md) - Container options
-
-### ⭐ Best Practices (Industry Standards)
-- [Cost Optimization](best-practices/cost-optimization.md)
-- [Security Checklist](best-practices/security-checklist.md)
-- [Performance Optimization](best-practices/performance-optimization.md)
-- [Tagging Strategy](best-practices/tagging-strategy.md)
-
 ### 🔧 Troubleshooting (Fix Common Issues)
 - [Common Errors Guide](troubleshooting/common-errors.md)
 - [EC2 Issues](troubleshooting/ec2-issues.md)
@@ -304,7 +292,6 @@ These 12 services cover specific use cases. Choose based on your needs.
 - [Lambda Issues](troubleshooting/lambda-issues.md)
 
 ### 📚 Additional Resources
-- [AWS Glossary](glossary/README.md) - Key terms explained
 - [Official AWS Links](resources/official-links.md)
 - [Free Tier Services](resources/free-tier-services.md)
 
@@ -313,24 +300,22 @@ These 12 services cover specific use cases. Choose based on your needs.
 ## 🎓 Recommended Learning Path
 
 ### Week 1-2: Tier 1 Foundations
-1. Complete [Core Concepts](core-concepts/README.md)
-2. Study [IAM](tier-1-foundational/iam/README.md) & [VPC](tier-1-foundational/vpc/README.md)
-3. Try [EC2 tutorial](tutorials/deploy-web-server.md)
+1. Study [IAM](tier-1-foundational/iam/README.md) & [VPC](tier-1-foundational/vpc/README.md)
+2. Try [EC2 tutorial](tutorials/deploy-web-server.md)
 
 ### Week 3-4: Storage & Databases (Tier 1)
-4. Learn [S3](tier-1-foundational/s3/README.md)
-5. Try [S3 Website Hosting](tutorials/s3-static-website.md)
-6. Learn [RDS](tier-1-foundational/rds/README.md)
+3. Learn [S3](tier-1-foundational/s3/README.md)
+4. Try [S3 Website Hosting](tutorials/s3-static-website.md)
+5. Learn [RDS](tier-1-foundational/rds/README.md)
 
 ### Week 5-6: Serverless & Infrastructure (Tier 1)
-7. Learn [Lambda](tier-1-foundational/lambda/README.md)
-8. Try [Serverless API tutorial](tutorials/serverless-api.md)
-9. Learn [CloudFormation](tier-1-foundational/cloudformation/README.md)
+6. Learn [Lambda](tier-1-foundational/lambda/README.md)
+7. Try [Serverless API tutorial](tutorials/serverless-api.md)
+8. Learn [CloudFormation](tier-1-foundational/cloudformation/README.md)
 
 ### Week 7+: Tier 2 & Tier 3 (Specializations)
-10. Choose services based on your project needs
-11. Review [Best Practices](best-practices/README.md)
-12. Build real projects!
+9. Choose services based on your project needs
+10. Build real projects!
 
 ## 📊 This Guide Covers
 
@@ -364,13 +349,12 @@ This simplified guide focuses on **quality over quantity** with these principles
 1. Start with [Getting Started](getting-started/README.md)
 2. Learn [Core Concepts](core-concepts/README.md)
 3. Follow the [Recommended Learning Path](#recommended-learning-path)
-4. Complete Tier 1 tutorials first
+4. Study Tier 1 services in-depth
 
 ### For Experienced Developers:
 1. Review [Tier 1 Services](#-tier-1-foundational-services-start-here) quickly
 2. Jump to Tier 2 & 3 as needed
-3. Check [Best Practices](best-practices/README.md)
-4. Use [Service Comparisons](service-comparisons/README.md) to choose tools  
+3. Check [Best Practices](best-practices/README.md)  
 
 ## � What's New (Simplified Edition)
 
