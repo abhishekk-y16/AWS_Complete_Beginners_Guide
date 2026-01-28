@@ -346,16 +346,15 @@ This simplified guide focuses on **quality over quantity** with these principles
 ## 🚀 Getting Started
 
 ### For Complete Beginners:
-1. Start with [What is Cloud Computing?](getting-started/what-is-cloud-computing.md)
-2. Then [What is AWS?](getting-started/what-is-aws.md)
-3. Learn [Core Concepts](core-concepts/vpc-fundamentals.md) - VPC, IAM, Regions, Pricing
-4. Follow the [Recommended Learning Path](#%EF%B8%8F-recommended-learning-paths-by-role)
-5. Study Tier 1 services: [EC2](tier-1-foundational/ec2/README.md), [S3](tier-1-foundational/s3/README.md), [RDS](tier-1-foundational/rds/README.md), [Lambda](tier-1-foundational/lambda/README.md)
+1. Start with [Tier 1 Foundational Services](#-tier-1-foundational-services-start-here)
+2. Learn the core services first: EC2, S3, RDS, Lambda, VPC, IAM, CloudFormation
+3. Follow the [Recommended Learning Paths by Role](#%EF%B8%8F-recommended-learning-paths-by-role)
+4. Then move to [Tier 2 Common Services](#-tier-2-very-common-services-learn-after-tier-1)
 
 ### For Experienced Developers:
 1. Review [Tier 1 Services](#-tier-1-foundational-services-start-here) quickly
 2. Jump to [Tier 2](#-tier-2-very-common-services-learn-after-tier-1) & [Tier 3](#-tier-3-specialization-services-advanced-topics) as needed
-3. Check [Best Practices](best-practices/security-checklist.md) for standards  
+3. Check [Tutorials](tutorials/) and [Use Cases](use-cases/) for practical examples  
 
 ## � What's New (Simplified Edition)
 
