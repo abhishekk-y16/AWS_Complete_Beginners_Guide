@@ -297,7 +297,7 @@ These 12 services cover specific use cases. Choose based on your needs.
 
 ---
 
-## 🎓 Recommended Learning Path
+## 🎓 Recommended Learning Path 
 
 ### Week 1-2: Tier 1 Foundations
 1. Study [IAM](tier-1-foundational/iam/README.md) & [VPC](tier-1-foundational/vpc/README.md)
